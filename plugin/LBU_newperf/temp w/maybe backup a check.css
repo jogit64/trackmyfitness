@@ -1,0 +1,63 @@
+.category {
+  background-color: #1c2333;
+  color: #f5f9fc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.oneday-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.oneday-form label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.oneday-form input[type="number"],
+.oneday-form input[type="time"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  background-color: #f5f9fc;
+  color: #1c2333;
+}
+
+.oneday-form input[type="number"]:focus,
+.oneday-form input[type="time"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.oneday-form input[type="submit"] {
+  background-color: #0079f2;
+  color: #f5f9fc;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.oneday-form input[type="submit"]:hover {
+  background-color: #57abff;
+}
+
+.oneday-form input[type="submit"]:active {
+  background-color: #0079f2;
+}

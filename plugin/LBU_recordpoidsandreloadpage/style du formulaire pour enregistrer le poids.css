@@ -1,0 +1,60 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin: 20px auto;
+
+  padding: 10px;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: 100;
+
+  margin-bottom: 5px;
+  flex-basis: 30%;
+  color: #f5f9fc;
+  font-family: "IMB Plex Sans", Sans-Serif;
+}
+
+input[type="date"],
+input[type="text"] {
+  padding: 1px;
+  margin-bottom: 15px;
+  color: #f5f9fc;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  background-color: #1c2333;
+  flex-basis: 60%;
+  margin-right: 10px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="submit"] {
+  font-family: "IMB Plex Sans", Sans-Serif;
+  background-color: #0053a6;
+  color: #fff;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex-basis: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0079f2;
+  color: #f5f9fc;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: #0079f2;
+}

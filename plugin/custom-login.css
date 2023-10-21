@@ -1,0 +1,157 @@
+/* TODO ***** ADAPTATION FORMULAIRE CONNEXION SUR MOBILE ***** */
+
+/* Fond */
+body {
+  background: #0e1525;
+}
+
+p {
+  background: #0e1525;
+}
+
+/* Logo */
+#login h1 a,
+.login h1 a {
+  /* background-image: url('../img/logo.svg'); */
+  display: none;
+}
+
+/* Logo */
+#login {
+  /* background-image: url('../img/logo.svg'); */
+  margin-top: 0px;
+  padding-top: 25px;
+}
+
+#loginform {
+  background: #0e1525;
+  margin-top: 0;
+}
+
+#registerform {
+  background: #0e1525;
+  margin-top: 0;
+}
+
+#registerform label:nth-of-type(1),
+#registerform label:nth-of-type(2) {
+  color: #bbbfce;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#reg_passmail {
+  color: #bbbfce;
+}
+
+#loginform label:nth-of-type(1),
+#loginform label:nth-of-type(2) {
+  color: #f5f9fc;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#wp-submit {
+  background-color: #2b3245;
+  border: none;
+  border-radius: 5px;
+  color: #f5f9fc;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+#wp-submit:hover {
+  background-color: #0079f2;
+}
+
+::placeholder,
+::-webkit-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#loginform p.submit {
+  display: flex;
+  justify-content: center;
+}
+
+/* Liens */
+.login #backtoblog a,
+.login #nav a,
+.privacy-policy-page-link a {
+  color: #bbbfce;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.privacy-policy-page-link a:hover {
+  color: #57abff;
+}
+
+.title {
+  font-family: "Luckiest Guy", Sans-serif;
+  color: #edff83;
+  font-weight: normal;
+  font-size: 5em;
+  line-height: 1.2em;
+  padding-top: 45px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.ss-title {
+  font-family: "Montserrat";
+  color: #bbbfce;
+
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.1em;
+
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+ul {
+  font-family: "Montserrat";
+  color: #bbbfce;
+
+  font-size: 1.5em;
+  font-weight: 200;
+  line-height: 1.1em;
+
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* Sélectionner l'élément input avec l'ID 'user_login' */
+#user_login::placeholder {
+  color: #777; /* Couleur du texte du placeholder */
+  font-style: italic; /* Style de police du placeholder */
+  font-size: 14px; /* Taille de police du placeholder */
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 4em;
+    line-height: 1.1em;
+    padding-top: 30px;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,369 @@
+/* 
+1.TOUTES PAGES:
+Définition des styles pour les liens dans le pied de page
+
+2.PAGE TABLEAU DE BORD:
+Styles pour les graphiques, le bouton d'affichage, le message d'erreur, et la liste des sports / hobbies choisis
+
+3.PAGE MODIFY:
+Définition des couleurs, réinitialisation des styles, application de la police, styles pour les catégories, boutons, formulaires de modification, champs de formulaire, et ajustements pour les champs à true dans la table sportlist
+
+4.PAGE PROFIL:
+Styles pour le formulaire de la liste de sports, y compris les cases à cocher et le bouton de soumission */
+
+/* todo ***** TOUTES PAGES ***** */
+
+.link-color {
+  /* Style pour le lien classe "link-color" dans le pieds de page : lebonunivers */
+  color: #f5f9fc;
+}
+
+.link-color:hover {
+  /* Style pour le lien classe "link-color" dans le pieds de page : lebonunivers */
+  color: #57abff;
+}
+
+/* todo ***** PAGE TABLEAU DE BORD ***** */
+/* ! style pour les graph 7 days   */
+
+.graph {
+  /* Style pour l'élément avec la classe "graph" */
+  background-color: #0e1525;
+}
+
+.chart-container {
+  /* Style pour l'élément avec la classe "chart-container" 7days */
+  height: 200px !important;
+}
+
+/* ! style pour le bouton display avec message day déja existant recordpoids */
+
+/* #hide {
+  display: none;
+} */
+
+#mybtn {
+  /* Style pour le bouton avec l'id "mybtn" */
+
+  font-family: "IBM Plex Sans";
+  background-color: #1c2333;
+  color: #f5f9fc;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex-basis: 100%;
+}
+
+#mybtn:hover {
+  /* Style pour le bouton lorsque la souris passe au-dessus */
+  background-color: #2b3245;
+  color: #f5f9fc;
+}
+
+#mybtn:active,
+#mybtn:focus {
+  /* Style pour le bouton lorsque l'utilisateur clique dessus ou le sélectionne */
+  background-color: #2b3245;
+}
+
+/* ! style pour le message day déja existant recordpoids */
+#error-message {
+  /* Style pour l'élément avec l'id "error-message" */
+  color: red;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  font-size: 14px;
+}
+
+/* ! style pour le bandeau de la liste des hobbies/sport choisis */
+/* Styles pour la liste des hobbies/sports sur la page tableau de bord */
+.sport-list-profil .sport-list-item {
+  /* Styles spécifiques à la liste d'activités sportives du profil */
+  background-color: #363173;
+  border-radius: 5px;
+  color: #f5f9fc;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.sport-list-profil .sport-list-item:hover {
+  background-color: #2b3245;
+}
+
+.sport-list-tableaubord .sport-list-tag {
+  /* Styles spécifiques aux tags d'activités sportives du tableau de bord */
+  background-color: #2b3245;
+  border-radius: 25px;
+  color: #f5f9fc;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  transition: background-color 0.3s;
+}
+
+.sport-list-tableaubord .sport-list-tag:hover {
+  background-color: #363173;
+}
+
+/* todo ***** PAGE MODIFY ***** */
+/* Définir les couleurs */
+:root {
+  --background-color: #0e1525;
+  --small-part-color: #19202a;
+  --font-color: #ffffff;
+  --button-color: #0053a6;
+  --button-hover-color: #0079f2;
+}
+
+/* Réinitialiser les styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Appliquer la police IBM Plex Sans */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Style de base pour les éléments de formulaire */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style pour les catégories */
+.category {
+  background-color: #363173;
+  border-radius: 5px;
+  color: var(--font-color);
+
+  padding: 20px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category .label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  background-color: #2b3245;
+  margin-right: 5px;
+}
+
+.category .record-item {
+  margin-bottom: 10px;
+
+  color: #f5f9f1;
+}
+
+/* Style pour les boutons */
+button.edit-button {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.edit-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Style pour les formulaires de modification */
+form.edit-form {
+  background-color: var(--small-part-color);
+  border-radius: 5px;
+  color: var(--font-color);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+form.edit-form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+form.edit-form input[type="number"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--font-color);
+  color: var(--font-color);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+form.edit-form button[type="submit"] {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form.edit-form button[type="submit"]:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Style pour les champs à true dans la table sportlist */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container .category {
+  background-color: var(--small-part-color);
+  border-radius: 5px;
+  color: var(--font-color);
+  margin: 20px 0;
+  padding: 20px;
+  width: calc(50% - 20px);
+}
+
+.container .category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container .category li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.container .category span {
+  font-size: 1.2rem;
+}
+
+.container .category span.category-title {
+  font-weight: bold;
+}
+
+.container .category button.edit-button {
+  margin-top: 20px;
+}
+
+.container .category form.edit-form {
+  margin-top: 20px;
+}
+
+/* Style pour les champs de formulaire */
+.edit-form input[type="number"] {
+  margin-bottom: 20px;
+}
+
+/* todo ***** PAGE PROFIL ***** */
+
+/* Style pour le formulaire de la liste de sports */
+form.sportlist-form {
+  background-color: #363173;
+  border-radius: 5px;
+  color: var(--font-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.sportlist-field {
+  margin-bottom: 20px;
+  width: calc(33.33% - 10px);
+}
+
+.sportlist-checkbox {
+  display: none;
+}
+
+.sportlist-label {
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  padding-left: 30px;
+  position: relative;
+}
+
+.sportlist-label:before {
+  border: 2px solid var(--font-color);
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.sportlist-checkbox:checked + .sportlist-label:before {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+}
+
+.sportlist-submit {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sportlist-submit:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Media queries pour rendre le formulaire plus adaptatif */
+@media screen and (max-width: 768px) {
+  .category {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .container .category {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+/* todo ***** TOUTES PAGES ***** */
+
+.link-color {
+  /* Style pour le lien classe "link-color" dans le pieds de page : lebonunivers */
+  color: #f5f9fc;
+}
+
+.link-color:hover {
+  /* Style pour le lien classe "link-color" dans le pieds de page : lebonunivers */
+  color: #57abff;
+}
+
+/* todo ***** PAGE TABLEAU DE BORD ***** */
+/* ! style pour les graph 7 days   */
+
+.graph {
+  /* Style pour l'élément avec la classe "graph" */
+  background-color: #0e1525;
+}
+
+.chart-container {
+  /* Style pour l'élément avec la classe "chart-container" 7days */
+  height: 200px !important;
+}
+
+/* ! style pour le bouton display avec message day déja existant recordpoids */
+#hide {
+  display: none;
+}
+
+#mybtn {
+  /* Style pour le bouton avec l'id "mybtn" */
+
+  font-family: "IBM Plex Sans";
+  background-color: #1c2333;
+  color: #f5f9fc;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  flex-basis: 100%;
+}
+
+#mybtn:hover {
+  /* Style pour le bouton lorsque la souris passe au-dessus */
+  background-color: #2b3245;
+  color: #f5f9fc;
+}
+
+#mybtn:active,
+#mybtn:focus {
+  /* Style pour le bouton lorsque l'utilisateur clique dessus ou le sélectionne */
+  background-color: #2b3245;
+}
+
+/* ! style pour le message day déja existant recordpoids */
+#error-message {
+  /* Style pour l'élément avec l'id "error-message" */
+  color: red;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  font-size: 14px;
+}

@@ -1,0 +1,17 @@
+/* TODO ***** ADAPTATION FORMULAIRE de CONTACT FORM 7 ***** */
+
+.wpcf7-response-output {
+  color: #dc3232;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+  border: none;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: #1c2333;
+}
